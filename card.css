@@ -1,0 +1,156 @@
+
+body{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 20% 80% 15% ;
+    align-items: center;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/736x/38/8f/b4/388fb449ec5c993982465c8e4fe5ed58.jpg');
+    background-size: cover;
+}
+.head h1{
+    font-size: 60px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    
+}
+.score1{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+    background-color: rgb(80, 107, 214);
+    margin-top: -280px;
+    color: rgb(250, 250, 253);
+    border-radius: 15px;
+    
+    
+}
+.score2{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+    background-color: rgb(80, 107, 214);
+    margin-top: -300px;
+    color: rgb(250, 250, 253);
+    border-radius: 15px;
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 10px;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    
+}
+.turns{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: center;
+   
+}
+#turns div{
+    padding-top: -10px;
+    margin-left: 20px;
+}
+#scores1,#scores2{
+    text-align: center;
+    font-size: 30px;
+    
+}
+.head{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 10px;
+    width: 100px;
+    color: rgb(43, 57, 150);
+    font-size: 20px;
+    border: none;
+    
+}
+#reset{
+    padding-left: 10px;
+}
+button:hover{
+    background-color: rgb(24, 22, 108);
+    cursor: pointer;
+    color: rgb(247, 247, 248);
+}
+
+@media only screen and (max-width:500px) {
+.head{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        
+    }
+    .head h1{
+        font-size: 30px;
+    }
+ body{
+  
+    width: 100%;
+    height: 100vh;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto 100px 1fr auto auto;
+
+}
+.main{
+    align-items: end;
+    grid-row: 3/4;
+    grid-column: 1/3;
+    margin-top: -70px;
+}
+.score1{
+margin-top: 10px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 90%;
+}
+.score1 h2,#scores1{
+    font-size: 15px;
+}
+.score2{
+    margin-top: 10px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 90%;
+    margin-left: 20px;
+}
+img{
+    width: 70px;
+    height: 70px;
+}
+.score2 h2,#scores2{
+    font-size: 15px;
+}
+.turns{
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+
+}
+
+
+
+
